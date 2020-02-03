@@ -1,0 +1,22 @@
+1. datatable
+ - hide "show 10 column"
+"lengthChange": false,
+
+thuoc tinh khac : searching , ordering , info , paging
+
+2. submit
+button , input (type : submit) , a href
+
+3. where with Null value
+c1: whereNull('col_name')
+c2: where('col_name, null)
+
+4 . truyen route trong model
+route('mapping_master_delete', ['id' => 5])
+
+- truyen id
+ + web : Route::match(['get', 'post'], '/alert/edit/{id}','AlertController@edit')
+
+5 . lay thuoc tinh của primaryKey cho sql find ( ngoai id)
+ -> khai bao trong modal
+$primaryKey = 'group_id';

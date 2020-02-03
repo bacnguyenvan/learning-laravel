@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="alternate" media="handheld" href="./index.html">
+    <link rel="alternate" media="only screen and (max-width: 768px)" href="./index.html">
+    <link rel="icon" href="./favicon.ico">
+
+    <title>お問い合わせ｜So-Manager</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+
+    <meta property="og:title" content="so-manager">
+    <meta property="og:url" content="./index.html">
+    <meta property="og:image" content="./assets/img/so-rin_logo.png">
+    <meta property="og:site_name" content="so-manager">
+    <meta property="og:description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="./assets/js/ie-emulation-modes-warning.js"></script><![endif]-->
+    <script src="./assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body id="" class="">
+   <div id="font-scale" class="home">
+    <header id="top" class="bg-light">
+      <div class="container pt10">
+        <div class="row mt10 mb10">
+          <div class="col-5 col-lg-4">
+            <a id="site-logo" class="navbar-brand" href="./index.html">
+              <img src="./assets/img/so-rin_logo.png" alt="logo" />
+              <h1>
+                <span class="small pc">駐車場・駐輪場総合サポートの株式会社ソーリン<br></span>
+                So-Manager
+              </h1>
+            </a>
+          </div>
+          <div class="col-lg-4 d-none d-lg-inline tl-search-area">
+<!--            <form class="form-inline pc" action="./search-finish.html">
+              <div class="form-group">
+                <input class="ml10 form-control" type="text" placeholder="キーワードを入力…" aria-label="Search">
+                <button class="ml10 btn btn-outline-success badge-pill" type="submit">検索</button>
+              </div>
+            </form>
+-->          </div>
+          <div class="col-6 col-lg-4 offset-1 offset-lg-0 tl-btn-area">
+            <a href="./login.html" class="btn btn-success badge-pill" id="login-btn">マイページ<span class="pc">へログイン</span></a>
+            <a href="./SWO-2.html" class="btn btn-outline-secondary badge-pill pc" id="sub-btn">会員登録</a>
+            <a class="d-lg-none h2" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" href="#collapseExample" id="nav-menu-btn"><span class="typcn typcn-th-menu"></span></a>
+            <!--<a href="" class="pc"><img src="./assets/img/fb.png" alt="fb" class="rounded-circle" /></a>-->            
+          </div>
+        </div>
+        <div class="row">
+          <nav class="col-12 navbar navbar-expand-lg justify-content-around" id="pc-nav-menu"><!-- PC用メインナビゲーション -->
+            <ul class="navbar-nav pc">
+              <li class="nav-item"><a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="./howto.html">かんたんご利用ガイド</a></li>
+              <li class="nav-item"><a class="nav-link" href="./search.html">空き駐輪場検索</a></li>
+              <li class="nav-item"><a class="nav-link" href="./faq.html">よくある質問</a></li>
+              <li class="nav-item active"><a class="nav-link" href="./contact.html">お問い合わせ</a></li>
+            </ul>            
+          </nav><!-- ./PC用メインナビゲーション -->          
+        </div>
+      </div>
+      <div class="bg-dark" id="nav-menu"><!-- モバイル用メインナビゲーション -->
+        <div class="container">
+        <nav class="collapse pb10" id="collapseExample">
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="./index.html">HOME <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="./howto.html">So-Managerの使い方</a></li>
+            <li class="nav-item"><a class="nav-link" href="./search.html">空き駐輪場検索</a></li>
+            <li class="nav-item"><a class="nav-link" href="./faq.html">よくある質問</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact.html">お問い合わせ</a></li>
+          </ul>
+          <form class="container mt10 mb10" action="./search-finish.html">
+            <div class="row">
+<!--              <input class="form-control col-7 offset-1" type="text" placeholder="キーワードを入力…" aria-label="Search">
+              <button class="ml10 btn btn-success col-2" type="submit">検索</button>
+-->            </div>
+          </form>
+        </nav>          
+        </div>
+      </div><!-- ./モバイル用メインナビゲーション -->
+    </header>
+
+    <!-- ▼　マイページメニュー：マイページの時のみ表示　▼ -->
+    <!--
+    <section id="my-menu" class="bg-success">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a id="my-menu-btn" class="navbar-toggler text-center" href="#navbarSupportedContent" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          マイメニューを開く
+          </a>
+          <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#" >マイページトップ<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">会員情報確認</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">定期契約情報</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">契約更新</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                契約履歴
+                </a>
+                <div class="dropdown-menu mb10" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">第２階層メニュー１</a>
+                  <a class="dropdown-item" href="#">第２階層メニュー２</a>
+                  <a class="dropdown-item" href="#">第２階層メニュー３</a>
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">新規定期契約</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">予約状況確認</a></li>
+              <li class="nav-item"><a class="nav-link" href="./search.html">空き駐輪場検索</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">このページの使い方</a></li>
+            </ul>
+          </div>
+        </nav>        
+      </div>
+    </section>
+    -->
+    <!-- ▲　マイページメニュー：マイページの時のみ表示　▲ -->
+
+    <!-- ▼　メイン部分　▼ -->
+    <main role="main" id="" class="">
+      <section id="" class="container mt20 mb20">
+        <div class="row">
+          <div class="col-12 col-lg-10 offset-0 offset-lg-1 mt20 mb20">
+            <h2 class="text-success text-center">お問い合わせ</h2>
+            <p>
+              株式会社ソーリンへのご訪問ありがとうございます。
+            </p>
+            <p>
+              お問い合わせいただくお客さまは、当社のホームページにおける<a href="./douibun.html">個人情報の取り扱い</a>について、あらかじめご確認いただき、ご同意いただいた上でお問い合わせください。個人情報の開示、訂正、削除、利用停止については、<a href="./privacy_disclosure.html">こちら</a>をご覧下さい。<br>
+              また、メールから送信ができないお客様はお手数ですが、下記電話までご連絡をお願い致します。
+            </p>
+            <p>
+              ※ 携帯・スマートフォンからメールでのお問い合わせ
+              確実にご返信をさせていただくために、ドメイン (so-rin.jp) の受信許可設定をお願い致します。              
+            </p>
+            <form class="form mt50" method="post" action="./mail.php">
+              <div class="row">
+                <div class="col-lg-3">氏名</div>
+                <div class="col-lg-9">
+                  <input type="text" class="form-control mb10" name="氏名" id="" placeholder="山田　太郎" />
+                </div>
+                <div class="col-lg-3">メールアドレス</div>
+                <div class="col-lg-9">
+                  <input type="email" class="form-control mb10" name="メールアドレス" id="" placeholder="info@so-manager.com" />
+                </div>
+                <div class="col-lg-3">電話番号</div>
+                <div class="col-lg-9">
+                  <input type="text" class="form-control mb10" name="電話番号" id="" placeholder="000-0000-0000" />
+                </div>
+                <div class="col-lg-3">お問い合わせ概要</div>
+                <div class="col-lg-9">
+                  <label class="mb10 mr20"><input type="checkbox" name="お問い合わせ概要" value="定期契約について"> 定期契約について</label>
+                  <label class="mb10 mr20"><input type="checkbox" name="お問い合わせ概要" value="操作方法について"> 操作方法について</label>
+                  <label class="mb10 mr20"><input type="checkbox" name="お問い合わせ概要" value="支払方法について"> 支払方法について</label>
+                  <label class="mb10 mr20"><input type="checkbox" name="お問い合わせ概要" value="その他お問合せ"> その他お問合せ</label>
+                </div>
+                <div class="col-lg-3">お問い合わせ詳細</div>
+                <div class="col-lg-9">
+                  <textarea class="form-control" cols="6" name="お問い合わせ詳細"></textarea>
+                </div>
+                <div class="col-lg-12 mt50 mb50 text-center">
+                  <input type="submit" class="btn btn-lg btn-success mb10" name="" id="" value="入力内容を確認する" />
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+<!--      <section id="main-news" class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <h2 class="col-12 text-center">新着情報</h2>
+            <div class="col-12 col-md-10 offset-0 offset-md-1">
+            <table class="table">
+              <tr>
+                <th>2018.9.1</th>
+                <th><span class="small alert alert-success">NEWS</span></th>
+                <td><h3><a href="">ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。</a></h3></td>
+              </tr>
+              <tr>
+                <th>2018.9.1</th>
+                <th><span class="small alert alert-success">NEWS</span></th>
+                <td><h3><a href="">ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。</a></h3></td>
+              </tr>
+              <tr>
+                <th>2018.9.1</th>
+                <th><span class="small alert alert-success">NEWS</span></th>
+                <td><h3><a href="">ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。</a></h3></td>
+              </tr>
+              <tr>
+                <th>2018.9.1</th>
+                <th><span class="small alert alert-success">NEWS</span></th>
+                <td><h3><a href="">ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。</a></h3></td>
+              </tr>
+              <tr>
+                <th>2018.9.1</th>
+                <th><span class="small alert alert-success">NEWS</span></th>
+                <td><h3><a href="">ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。</a></h3></td>
+              </tr>
+            </table>
+            </div>
+          </div>
+        </div>
+      </section>-->
+      <section id="about" class="pt50 pb50">
+        <div class="container">
+          <div class="row">
+            <h2 class="col-12 text-center">So-Managerとは？</h2>
+            <p class="col-12 col-md-10 offset-0 offset-md-1 text-center">
+              So-Managerは、株式会社ソーリンがお送りする、駐輪場マネジメントウェブシステムです。<br class="pc">
+              空き駐輪場の検索、予約、駐輪場定期の新規発行、更新がネット上からカンタンに行えます。
+            </p>
+            <button class="col-10 col-md-6 offset-1 offset-md-3 btn btn-lg btn-success badge-pill">
+              ご利用方法のページへ
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="banner" class="">
+          <a href="http://so-rin.jp/donyu.html" target="_blank">
+            <img src="./assets/img/donyu-bn.jpg" class="w-100" alt="">
+          </a>
+      </section>
+
+
+    </main><!-- /.container -->
+    <!-- ▲　メイン部分　▲ -->
+
+    <footer class="jumbotron">
+      <section class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <ul class="footer-nav-menu">
+              <li><a href="./summary.html">運営会社</a></li>
+              <li><a href="./privacy.html">個人情報保護方針</a></li>
+              <li class="pc"><a href="./tokusyo.html">特定商取引法に基づく表示</a></li>
+              <li class="w-100 sp"><a href="./tokusyo.html">特定商取引法に基づく表示</a></li>
+              <li><a href="./riyokiyaku.html">ウェブサイト利用規約</a></li>
+              <li><a href="./sitemap.html">サイトマップ</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-10 offset-0 offset-md-1 text-lg-center">
+            <p class="small text-secondary mt20">
+              株式会社ソーリン　<br class="sp">
+              〒121-0073　東京都足立区六町4-12-25　<br class="sp">
+              tel:03-5856-4647　fax:03-5856-4648<br>
+            </p>
+            <p class="small text-secondary">            
+              Copyright© so-rin Co.,Ltd. All Rights Reserved.              
+            </p>
+          </div>
+        </div>
+      </section>
+      <figure class="p-mark"><img src="./assets/img/10740034_06_75_JP.gif" alt="Pマーク" /></figure>
+    </footer>
+
+    <!-- ▼　文字サイズCSS変更ボタン　▼ -->
+    <section id="scale-control-area" class="text-center">
+      <button class="btn btn-success mt10">文字を大きく+</button>
+      <button class="btn btn-success btn-submit mt10 d-none">文字を大きく++</button>
+      <br class="pc">
+      <button class="btn btn-secondary mt10">文字を小さく-</button>
+      <button class="btn btn-secondary btn-cancel mt10 d-none">元のサイズへ</button>
+    </section>
+    <!-- ▲　文字サイズCSS変更ボタン　▲ -->
+
+   </div><!-- ./#font-scale -->
+
+   <!-- Bootstrap core JavaScript
+   ================================================== -->
+   <!-- Placed at the end of the document so the pages load faster -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery.min.js"><\/script>')</script>
+   <script src="./assets/js/vendor/popper.min.js"></script>
+   <script src="./bootstrap/js/bootstrap.min.js"></script>
+   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+   <script src="./assets/js/ie10-viewport-bug-workaround.js"></script>    
+   <script src="./assets/js/commons.js"></script>    
+  </body>
+</html>

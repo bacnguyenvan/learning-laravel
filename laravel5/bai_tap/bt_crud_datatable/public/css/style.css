@@ -1,0 +1,54 @@
+ul.dropdown_group{
+	list-style: none;
+}
+
+.form-control[readonly] {
+    background-color: #fff !important;
+}
+.dropdown_group li input[type=radio],.dropdown_group li input[type=checkbox]{
+	display: none;
+}
+.dropdown_group li input[type=radio]+label{
+	border: 1px solid #ddd;
+    width: 100%;
+    padding: 5px; 
+}
+.dropdown_group li input[type=checkbox]+label{
+	border: 1px solid #ddd;
+    width: 100%;
+    padding: 5px; 
+}
+
+.dropdown_group li input[type=radio]+label:hover,.dropdown_group li input[type=checkbox]+label:hover{
+	color: #007bff;
+	cursor: pointer;
+}
+.dropdown_group li input[type=radio]:checked +label,.dropdown_group li input[type=checkbox]:checked +label{
+	background: #007bff ;
+    color: #fff;
+}
+
+/*confirm message*/
+.jconfirm-buttons{
+	float: none !important;
+	text-align: center;
+}
+.jconfirm-buttons .btn-center{
+	margin-left: auto !important;
+    display: table !important;
+    margin-right: auto !important;
+}
+
+.jconfirm-buttons .btn{
+	width: 40%;
+}
+.jconfirm-buttons .btn:first-child:not(.btn_center) {
+    margin-right: 20px !important;
+}
+
+/**/
+
+.disable{
+	pointer-events: none;
+	background: #6c6f7d21;
+}

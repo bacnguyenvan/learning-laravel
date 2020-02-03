@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="alternate" media="handheld" href="./index.html">
+    <link rel="alternate" media="only screen and (max-width: 768px)" href="./index.html">
+    <link rel="icon" href="./favicon.ico">
+
+    <title>よくある質問｜So-Manager</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+
+    <meta property="og:title" content="so-manager">
+    <meta property="og:url" content="./index.html">
+    <meta property="og:image" content="./assets/img/so-rin_logo.png">
+    <meta property="og:site_name" content="so-manager">
+    <meta property="og:description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="./assets/js/ie-emulation-modes-warning.js"></script><![endif]-->
+    <script src="./assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body id="" class="">
+   <div id="font-scale" class="home">
+    <header id="top" class="bg-light">
+      <div class="container pt10">
+        <div class="row mt10 mb10">
+          <div class="col-5 col-lg-4">
+            <a id="site-logo" class="navbar-brand" href="./index.html">
+              <img src="./assets/img/so-rin_logo.png" alt="logo" />
+              <h1>
+                <span class="small pc">駐車場・駐輪場総合サポートの株式会社ソーリン<br></span>
+                So-Manager
+              </h1>
+            </a>
+          </div>
+          <div class="col-lg-4 d-none d-lg-inline tl-search-area">
+<!--            <form class="form-inline pc" action="./search-finish.html">
+              <div class="form-group">
+                <input class="ml10 form-control" type="text" placeholder="キーワードを入力…" aria-label="Search">
+                <button class="ml10 btn btn-outline-success badge-pill" type="submit">検索</button>
+              </div>
+            </form>
+-->          </div>
+          <div class="col-6 col-lg-4 offset-1 offset-lg-0 tl-btn-area">
+            <a href="./login.html" class="btn btn-success badge-pill" id="login-btn">マイページ<span class="pc">へログイン</span></a>
+            <a href="./SWO-2.html" class="btn btn-outline-secondary badge-pill pc" id="sub-btn">会員登録</a>
+            <a class="d-lg-none h2" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" href="#collapseExample" id="nav-menu-btn"><span class="typcn typcn-th-menu"></span></a>
+            <!--<a href="" class="pc"><img src="./assets/img/fb.png" alt="fb" class="rounded-circle" /></a>-->            
+          </div>
+        </div>
+        <div class="row">
+          <nav class="col-12 navbar navbar-expand-lg justify-content-around" id="pc-nav-menu"><!-- PC用メインナビゲーション -->
+            <ul class="navbar-nav pc">
+              <li class="nav-item"><a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="./howto.html">かんたんご利用ガイド</a></li>
+              <li class="nav-item"><a class="nav-link" href="./search.html">空き駐輪場検索</a></li>
+              <li class="nav-item active"><a class="nav-link" href="./faq.html">よくある質問</a></li>
+              <li class="nav-item"><a class="nav-link" href="./contact.html">お問い合わせ</a></li>
+            </ul>            
+          </nav><!-- ./PC用メインナビゲーション -->          
+        </div>
+      </div>
+      <div class="bg-dark" id="nav-menu"><!-- モバイル用メインナビゲーション -->
+        <div class="container">
+        <nav class="collapse pb10" id="collapseExample">
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="./index.html">HOME <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="./howto.html">So-Managerの使い方</a></li>
+            <li class="nav-item"><a class="nav-link" href="./search.html">空き駐輪場検索</a></li>
+            <li class="nav-item"><a class="nav-link" href="./faq.html">よくある質問</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact.html">お問い合わせ</a></li>
+          </ul>
+          <form class="container mt10 mb10" action="./search-finish.html">
+            <div class="row">
+<!--              <input class="form-control col-7 offset-1" type="text" placeholder="キーワードを入力…" aria-label="Search">
+              <button class="ml10 btn btn-success col-2" type="submit">検索</button>
+-->            </div>
+          </form>
+        </nav>          
+        </div>
+      </div><!-- ./モバイル用メインナビゲーション -->
+    </header>
+
+    <!-- ▼　マイページメニュー：マイページの時のみ表示　▼ -->
+    <!--
+    <section id="my-menu" class="bg-success">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a id="my-menu-btn" class="navbar-toggler text-center" href="#navbarSupportedContent" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          マイメニューを開く
+          </a>
+          <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#" >マイページトップ<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">会員情報確認</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">定期契約情報</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">契約更新</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                契約履歴
+                </a>
+                <div class="dropdown-menu mb10" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">第２階層メニュー１</a>
+                  <a class="dropdown-item" href="#">第２階層メニュー２</a>
+                  <a class="dropdown-item" href="#">第２階層メニュー３</a>
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">新規定期契約</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">予約状況確認</a></li>
+              <li class="nav-item"><a class="nav-link" href="./search.html">空き駐輪場検索</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">このページの使い方</a></li>
+            </ul>
+          </div>
+        </nav>        
+      </div>
+    </section>
+    -->
+    <!-- ▲　マイページメニュー：マイページの時のみ表示　▲ -->
+
+    <!-- ▼　メイン部分　▼ -->
+    <main role="main" id="" class="">
+      <section id="" class="container mt20 mb20">
+        <div class="row">
+          <div class="col-12 col-lg-10 offset-0 offset-lg-1 mt20 mb20">
+            <h2 class="text-success text-center">よくある質問</h2>
+            <h3 class="h4 mt30 alert alert-success">ユーザー登録・ログイン</h3>
+            <div class="card card-body mb10">
+              <a class="" data-toggle="collapse" href="#faq_01" role="button" aria-expanded="false" aria-controls="faq_01">
+              Q　利用するには、どうしたらいいですか？
+              </a>
+              <div class="collapse" id="faq_01">
+                <hr>
+                <p>A　ご利用には、ユーザー登録が必要です。ユーザー登録には、メールアドレスと電話番号をご登録頂きます。ユーザー登録は無料です。</p>
+              </div>
+            </div> 
+            <div class="card card-body mb10">
+              <a class="" data-toggle="collapse" href="#faq_02" role="button" aria-expanded="false" aria-controls="faq_01">
+              Q　ログインパスワードがわからなくなった（初回ログイン）
+              </a>
+              <div class="collapse" id="faq_02">
+                <hr>
+                <p>A　初回登録時、ログインパスワードはメールで送信されます。初回ログイン時に「ユーザー情報確認」からパスワードを修正されることをおすすめいたします。
+</p>
+              </div>
+            </div> 
+            <div class="card card-body mb10">
+              <a class="" data-toggle="collapse" href="#faq_03" role="button" aria-expanded="false" aria-controls="faq_03">
+              Q　ログインパスワードがわからなくなった（共通）
+              </a>
+              <div class="collapse" id="faq_03">
+                <hr>
+                <p>A　ログインページに記載されている、「パスワードを忘れた方はこちら」をクリックして、メールアドレス、電話番号を入力・送信すると、新しいパスワードを発行いたします。</p>
+              </div>
+            </div> 
+            <div class="card card-body mb10">
+              <a class="" data-toggle="collapse" href="#faq_04" role="button" aria-expanded="false" aria-controls="faq_04">
+              Q　パソコンやスマートフォンを利用できない場合は使えないのでしょうか。
+              </a>
+              <div class="collapse" id="faq_04">
+                <hr>
+                <p>A　書面手続で駐輪場をご利用いただけます。詳しくはお問合せ下さい。</p>
+              </div>
+            </div> 
+            <h3 class="h4 mt30 alert alert-success">新規契約・空き待ち予約</h3>
+            <div class="card card-body mb10">
+              <a class="" data-toggle="collapse" href="#faq_05" role="button" aria-expanded="false" aria-controls="faq_05">
+              Q　契約したい駐輪場が満車でした。
+              </a>
+              <div class="collapse" id="faq_05">
+                <hr>
+                <p>A　空き待ち登録をしていただけます。希望の駐輪場を検索すると、空き待ちボタンが表示されていますので、クリックして空き待ち登録をして下さい。空き待ち登録をしていただくと、空きがでた際に登録されたメール宛てにお知らせいたします。</p>
+              </div>
+            </div> 
+            <div class="card card-body mb10">
+              <a class="" data-toggle="collapse" href="#faq_06" role="button" aria-expanded="false" aria-controls="faq_06">
+              Q　空き待ち予約とはなんですか？
+              </a>
+              <div class="collapse" id="faq_06">
+                <hr>
+                <p>A　その駐輪場は現在満車のため、空きが出たら、お知らせする機能です。駐輪場を選択した場合に、空きがある場合には、「新規契約」ボタンが表示されます。満車の場合には、「空き待ち予約」ボタンが表示されます。</p>
+              </div>
+            </div> 
+            <div class="card card-body mb10">
+              <a class="" data-toggle="collapse" href="#faq_07" role="button" aria-expanded="false" aria-controls="faq_07">
+              Q　新規契約はどこから手続できますか。
+              </a>
+              <div class="collapse" id="faq_07">
+                <hr>
+                <p>A　新規契約にはまずユーザー登録が必要です。ユーザー登録がお済みの方は、トップページの新規登録をクリックし、まずはマイページへログインしてから、マイメニューの「新規定期契約」をクリックしてください。<br>「新規定期契約」メニューをクリックすると、駐輪場一覧が表示されます。契約したい駐輪場を選択して、「新規予約」ボタンを押して下さい。</p>
+              </div>
+            </div> 
+            <h3 class="h4 mt30 alert alert-success">定期更新</h3>
+            <div class="card card-body mb10">
+              <a class="" data-toggle="collapse" href="#faq_08" role="button" aria-expanded="false" aria-controls="faq_08">
+              Q　更新の方法がわかりません。
+              </a>
+              <div class="collapse" id="faq_08">
+                <hr>
+                <p>A　契約更新時期がくると、予め登録されたメールアドレスにお知らせメールが配信されます。更新の案内メールが届いたら、so-manager.comへログインしてください。<br>
+マイページトップに更新時期を迎えた定期の表示が出ています。更新ボタンを押して、更新手続を行って下さい。</p>
+              </div>
+            </div> 
+            <div class="card card-body mb10">
+              <a class="" data-toggle="collapse" href="#faq_09" role="button" aria-expanded="false" aria-controls="faq_09">
+              Q　更新の案内メールが届きません。
+              </a>
+              <div class="collapse" id="faq_09">
+                <hr>
+                <p>A　メールが受信できない場合には、いくつか原因が考えられます。以下に該当するかどうか確認してください。<br>該当のない場合には、お問合せください。</p>
+                <p>
+<span class="text-success">
+1）登録されているメールアドレスを間違えている、または古くて受信確認できないメールアドレスを登録している</span><br>
+⇒マイページにログインして、「ユーザー情報確認」メニューから登録されているメールアドレスをご確認ください。メールアドレスの新規登録、修正を行って下さい。
+</p>
+<p>
+<span class="text-success">2）so-manager.comから送信されるメールが迷惑メールとなっている</span><br>
+⇒so-manage.comからのメールを受信できるようドメイン指定受信設定をしてください。
+</p>
+<p>
+<span class="text-success">3)　特殊なメールアドレスをご利用の場合</span><br>
+⇒携帯電話などのアドレスで古くから使われている場合に散見されます。代表的な例で、メールアドレスの開始が.（ドット）から始まるメールアドレスや＠の前に.（ドット）が複数続くメールアドレスなどはso-manager.comからのメールを受け付けて頂けない場合がございます。このような場合は、1)と同じく別のメールアドレスをご登録頂きますようお願い申し上げます。                  
+                </p>
+              </div>
+            </div> 
+
+            <h3 class="h4 mt30 alert alert-success">お支払い</h3>
+            <div class="card card-body mb10">
+              <a class="" data-toggle="collapse" href="#faq_10" role="button" aria-expanded="false" aria-controls="faq_10">
+              Q　支払の種類を教えて下さい
+              </a>
+              <div class="collapse" id="faq_10">
+                <hr>
+                <p>A　クレジットカード、コンビニ支払、ペイジーがお選びいただけます。お支払いは全て決済代行会社の株式会社ウェルネットを通じてお支払いいただきます。詳しくは決済時に表示される決済代行会社の案内をご確認ください。</p>
+                <p>
+クレジットカード：　Visa、Master<br>
+コンビニ支払：ローソン、ファミリーマート、ミニストップ、セブンイレブン（2019年1月より扱い開始予定）、その他　ご利用いただけるコンビニエンスストアは、決済時の案内でご確認ください、</p>
+              </div>
+            </div> 
+
+            <h3 class="h4 mt30 alert alert-success">定期の解約</h3>
+            <div class="card card-body mb10">
+              <a class="" data-toggle="collapse" href="#faq_12" role="button" aria-expanded="false" aria-controls="faq_12">
+              Q　定期の解約方法
+              </a>
+              <div class="collapse" id="faq_12">
+                <hr>
+                <p>A　マイページ内のメニュー「定期契約情報」に現在有効な契約情報が表示されています。その契約情報に「解約ボタン」がありますので、押下してください。解約手続終了月末付けでの解約となります。</p>
+              </div>
+            </div> 
+            <div class="card card-body mb10">
+              <a class="" data-toggle="collapse" href="#faq_13" role="button" aria-expanded="false" aria-controls="faq_13">
+              Q　解約返金はありますか。
+              </a>
+              <div class="collapse" id="faq_13">
+                <hr>
+                <p>A　解約による返金は、それぞれご利用頂く駐輪場によって返金ポリシーが異なります。解約ボタンを押下すると、オペレータがお客様の契約状況を確認し、返金について改めてご連絡致します。詳しくは、各駐輪場の利用規約をご確認ください。</p>
+              </div>
+            </div> 
+
+            <h3 class="h4 mt30 alert alert-success">ユーザー退会</h3>
+            <div class="card card-body mb10">
+              <a class="" data-toggle="collapse" href="#faq_11" role="button" aria-expanded="false" aria-controls="faq_11">
+              Q　退会方法
+              </a>
+              <div class="collapse" id="faq_11">
+                <hr>
+                <p>A　マイページ内の「ユーザー情報確認」メニューに、退会ボタンがございます。退会いたしますと、お客様のご利用頂いた履歴、空き待ち予約情報などが全て消去されますので、ご注意ください、</p>
+              </div>
+            </div> 
+
+            <h3 class="h4 mt30 alert alert-success">シール発行</h3>
+            <div class="card card-body mb10">
+              <a class="" data-toggle="collapse" href="#faq_14" role="button" aria-expanded="false" aria-controls="faq_14">
+              Q　シールはどうやって発行しますか。
+              </a>
+              <div class="collapse" id="faq_14">
+                <hr>
+                <p>A　新規契約手続または更新手続が完了すると、マイページにQRコードが表示されます。そのQRコードを読み取り機にかざすと、シールが印字されます。スマートフォン以外のご利用者様は、パソコンなどに表示されるQRコードを印刷してお持ちください。</p>
+              </div>
+            </div> 
+            <div class="card card-body mb10">
+              <a class="" data-toggle="collapse" href="#faq_15" role="button" aria-expanded="false" aria-controls="faq_15">
+              Q　パソコンやスマートフォンを利用できません。
+              </a>
+              <div class="collapse" id="faq_15">
+                <hr>
+                <p>A　パソコンやスマートフォンのご利用ができない場合には、シール発行用のICタグをお貸出いたします。契約解約時にはご返却ください。また、紛失時には再発行手数料がかかりますので、お取り扱いにはご注意ください。</p>
+              </div>
+            </div> 
+
+            <h3 class="h4 mt30 alert alert-success">その他</h3>
+            <div class="card card-body mb10">
+              <a class="" data-toggle="collapse" href="#faq_16" role="button" aria-expanded="false" aria-controls="faq_16">
+              Q So-Managerの読み方がわからない
+              </a>
+              <div class="collapse" id="faq_16">
+                <hr>
+                <p>A　ソーマネージャーと読みます</p>
+              </div>
+            </div> 
+
+
+          </div>
+        </div>
+      </section>
+<!--      <section id="main-news" class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <h2 class="col-12 text-center">新着情報</h2>
+            <div class="col-12 col-md-10 offset-0 offset-md-1">
+            <table class="table">
+              <tr>
+                <th>2018.9.1</th>
+                <th><span class="small alert alert-success">NEWS</span></th>
+                <td><h3><a href="">ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。</a></h3></td>
+              </tr>
+              <tr>
+                <th>2018.9.1</th>
+                <th><span class="small alert alert-success">NEWS</span></th>
+                <td><h3><a href="">ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。</a></h3></td>
+              </tr>
+              <tr>
+                <th>2018.9.1</th>
+                <th><span class="small alert alert-success">NEWS</span></th>
+                <td><h3><a href="">ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。</a></h3></td>
+              </tr>
+              <tr>
+                <th>2018.9.1</th>
+                <th><span class="small alert alert-success">NEWS</span></th>
+                <td><h3><a href="">ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。</a></h3></td>
+              </tr>
+              <tr>
+                <th>2018.9.1</th>
+                <th><span class="small alert alert-success">NEWS</span></th>
+                <td><h3><a href="">ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。</a></h3></td>
+              </tr>
+            </table>
+            </div>
+          </div>
+        </div>
+      </section>-->
+      <section id="about" class="pt50 pb50">
+        <div class="container">
+          <div class="row">
+            <h2 class="col-12 text-center">So-Managerとは？</h2>
+            <p class="col-12 col-md-10 offset-0 offset-md-1 text-center">
+              So-Managerは、株式会社ソーリンがお送りする、駐輪場マネジメントウェブシステムです。<br class="pc">
+              空き駐輪場の検索、予約、駐輪場定期の新規発行、更新がネット上からカンタンに行えます。
+            </p>
+            <button class="col-10 col-md-6 offset-1 offset-md-3 btn btn-lg btn-success badge-pill">
+              ご利用方法のページへ
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="banner" class="">
+          <a href="http://so-rin.jp/donyu.html" target="_blank">
+            <img src="./assets/img/donyu-bn.jpg" class="w-100" alt="">
+          </a>
+      </section>
+
+
+    </main><!-- /.container -->
+    <!-- ▲　メイン部分　▲ -->
+
+    <footer class="jumbotron">
+      <section class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <ul class="footer-nav-menu">
+              <li><a href="./summary.html">運営会社</a></li>
+              <li><a href="./privacy.html">個人情報保護方針</a></li>
+              <li class="pc"><a href="./tokusyo.html">特定商取引法に基づく表示</a></li>
+              <li class="w-100 sp"><a href="./tokusyo.html">特定商取引法に基づく表示</a></li>
+              <li><a href="./riyokiyaku.html">ウェブサイト利用規約</a></li>
+              <li><a href="./sitemap.html">サイトマップ</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-10 offset-0 offset-md-1 text-lg-center">
+            <p class="small text-secondary mt20">
+              株式会社ソーリン　<br class="sp">
+              〒121-0073　東京都足立区六町4-12-25　<br class="sp">
+              tel:03-5856-4647　fax:03-5856-4648<br>
+            </p>
+            <p class="small text-secondary">            
+              Copyright© so-rin Co.,Ltd. All Rights Reserved.              
+            </p>
+          </div>
+        </div>
+      </section>
+      <figure class="p-mark"><img src="./assets/img/10740034_06_75_JP.gif" alt="Pマーク" /></figure>
+    </footer>
+
+    <!-- ▼　文字サイズCSS変更ボタン　▼ -->
+    <section id="scale-control-area" class="text-center">
+      <button class="btn btn-success mt10">文字を大きく+</button>
+      <button class="btn btn-success btn-submit mt10 d-none">文字を大きく++</button>
+      <br class="pc">
+      <button class="btn btn-secondary mt10">文字を小さく-</button>
+      <button class="btn btn-secondary btn-cancel mt10 d-none">元のサイズへ</button>
+    </section>
+    <!-- ▲　文字サイズCSS変更ボタン　▲ -->
+
+   </div><!-- ./#font-scale -->
+
+   <!-- Bootstrap core JavaScript
+   ================================================== -->
+   <!-- Placed at the end of the document so the pages load faster -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery.min.js"><\/script>')</script>
+   <script src="./assets/js/vendor/popper.min.js"></script>
+   <script src="./bootstrap/js/bootstrap.min.js"></script>
+   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+   <script src="./assets/js/ie10-viewport-bug-workaround.js"></script>    
+   <script src="./assets/js/commons.js"></script>    
+  </body>
+</html>

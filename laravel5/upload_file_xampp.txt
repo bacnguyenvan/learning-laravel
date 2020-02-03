@@ -1,0 +1,14 @@
+php.ini (apache)
+- configure
+ + upload_max_filesize : 200M
+ +post_max_size : 200M
+  +max_execution_time :60
+
+-- fix errors
+  + my.ini
+	+skip-grant-tables
+	after [mysqld] group.
+	[mysqld]
+skip-grant-tables
+port=3306
+socket=/tmp/mysql.sock

@@ -1,0 +1,19 @@
+
+ @if(count($errors)>0)
+     <div class="alert alert-danger">
+             @foreach($errors->all() as $item)
+                    {{$item}}
+             @endforeach
+     </div>
+  @endif
+
+
+
+
+<div>
+	<label>Email</label>
+	<input type="email" class="form-control" placeholder="Email" name="txtEmail" >
+	@if($errors->has('txtEmail'))
+              <p style="color: red">{{$errors->first('txtEmail')}}</p>
+        @endif
+</div>

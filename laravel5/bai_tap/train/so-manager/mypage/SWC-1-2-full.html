@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="ja"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="alternate" media="handheld" href="../Templates/index.html">
+<link rel="alternate" media="only screen and (max-width: 768px)" href="../Templates/index.html">
+<link rel="icon" href="../favicon.ico">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>ユーザー情報確認-ユーザー情報｜So-Manager</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="../assets/js/vendor/jquery.tablesorter/themes/blue/style.css" type="text/css" media="print, projection, screen" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
+<link href="../assets/js/vendor/slick/slick.css" rel="stylesheet" />
+<link href="../assets/js/vendor/slick/slick-theme.css" rel="stylesheet" />
+
+<!-- Bootstrap core CSS -->
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="../assets/css/style.css" rel="stylesheet">
+<meta property="og:title" content="so-manager">
+<meta property="og:url" content="../index.html">
+<meta property="og:image" content="../assets/img/so-rin_logo.png">
+<meta property="og:site_name" content="so-manager">
+<meta property="og:description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="../assets/js/ie-emulation-modes-warning.js"></script><![endif]-->
+<script src="../assets/js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<!-- InstanceParam name="n_top_off" type="boolean" value="true" -->
+<!-- InstanceParam name="n_top_on" type="boolean" value="false" -->
+<!-- InstanceParam name="n_user_off" type="boolean" value="false" -->
+<!-- InstanceParam name="n_user_on" type="boolean" value="true" -->
+<!-- InstanceParam name="n_teiki_off" type="boolean" value="true" -->
+<!-- InstanceParam name="n_teiki_on" type="boolean" value="false" -->
+<!-- InstanceParam name="n_renew_off" type="boolean" value="true" -->
+<!-- InstanceParam name="n_renew_on" type="boolean" value="false" -->
+<!-- InstanceParam name="n_history_off" type="boolean" value="true" -->
+<!-- InstanceParam name="n_history_on" type="boolean" value="false" -->
+<!-- InstanceParam name="n_new_off" type="boolean" value="true" -->
+<!-- InstanceParam name="n_new_on" type="boolean" value="false" -->
+<!-- InstanceParam name="n_vacant_off" type="boolean" value="true" -->
+<!-- InstanceParam name="n_vacant_on" type="boolean" value="false" -->
+<!-- InstanceParam name="n_search_off" type="boolean" value="true" -->
+<!-- InstanceParam name="n_search_on" type="boolean" value="false" -->
+<!-- InstanceParam name="n_how_off" type="boolean" value="true" -->
+<!-- InstanceParam name="n_how_on" type="boolean" value="false" -->
+</head>
+
+<body id="" class="">
+<div id="font-scale" class="my-page">
+  <header id="top" class="bg-light">
+    <div class="container pt10">
+      <div class="row mt10 mb10">
+        <div class="col-5 col-lg-4"> <a id="site-logo" class="navbar-brand" href="../index.html"> <img src="../assets/img/so-rin_logo.png" alt="logo" />
+          <h1> <span class="small pc">駐車場・駐輪場総合サポートの株式会社ソーリン<br>
+            </span> So-Manager </h1>
+          </a> </div>
+        <div class="col-lg-4 d-none d-lg-inline tl-search-area">
+<!--          <form class="form-inline pc" action="../search-finish.html">
+            <div class="form-group">
+              <input class="ml10 form-control" type="text" placeholder="キーワードを入力…" aria-label="Search">
+              <button class="ml10 btn btn-outline-success badge-pill" type="submit">検索</button>
+            </div>
+          </form>
+-->        </div>
+        <div class="col-6 col-lg-4 offset-1 offset-lg-0 tl-btn-area"> <a href="" class="" id="login-btn"><span class="small d-none d-xl-inline">ようこそ</span>〇〇〇〇さん</a> <a href="../index.html" class="btn btn-outline-secondary badge-pill pc" id="sub-btn">ログアウト</a> <a class="d-lg-none h2" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" href="#collapseExample" id="nav-menu-btn"><span class="typcn typcn-th-menu"></span></a> <!--<a href="" class="pc"><img src="../assets/img/fb.png" alt="fb" class="rounded-circle" /></a>--> </div>
+      </div>
+      <div class="row">
+        <nav class="col-12 navbar navbar-expand-lg justify-content-around" id="pc-nav-menu"><!-- PC用メインナビゲーション -->
+          <ul class="navbar-nav pc">
+            <li class="nav-item"><a class="nav-link" href="../index.html">HOME <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="../howto.html">So-Managerの使い方</a></li>
+            <li class="nav-item"><a class="nav-link" href="../search.html">空き駐輪場検索</a></li>
+            <li class="nav-item"><a class="nav-link" href="../faq.html">よくある質問</a></li>
+            <li class="nav-item"><a class="nav-link" href="../contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <!-- ./PC用メインナビゲーション --> 
+      </div>
+    </div>
+    <div class="bg-dark" id="nav-menu"><!-- モバイル用メインナビゲーション -->
+      <div class="container">
+        <nav class="collapse pb10" id="collapseExample">
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="../index.html">HOME <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="../howto.html">So-Managerの使い方</a></li>
+            <li class="nav-item"><a class="nav-link" href="../search.html">空き駐輪場検索</a></li>
+            <li class="nav-item"><a class="nav-link" href="../faq.html">よくある質問</a></li>
+            <li class="nav-item"><a class="nav-link" href="../contact.html">お問い合わせ</a></li>
+          </ul>
+          <form class="container mt10 mb10" action="../search-finish.html">
+            <div class="row">
+<!--              <input class="form-control col-7 offset-1" type="text" placeholder="キーワードを入力…" aria-label="Search">
+              <button class="ml10 btn btn-success col-2" type="submit">検索</button>
+-->            </div>
+          </form>
+        </nav>
+      </div>
+    </div>
+    <!-- ./モバイル用メインナビゲーション --> 
+  </header>
+  <!-- ▼　マイページメニュー：マイページの時のみ表示　▼ -->
+  <section id="my-menu" class="bg-success">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark"> <a id="my-menu-btn" class="navbar-toggler text-center" href="#navbarSupportedContent" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> マイメニューを開く </a>
+        <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item"><a class="nav-link" href="index.html" >マイページトップ<span class="sr-only">(current)</span></a></li>
+            
+            <li class="nav-item active"><a class="nav-link" href="SWC-1-2.html">ユーザー情報確認</a></li>
+            
+            <li class="nav-item"><a class="nav-link" href="SWC-3.html">定期契約情報</a></li>
+            
+            <li class="nav-item"><a class="nav-link" href="SWC-4-01.html">契約更新</a></li>
+            
+            <li class="nav-item"><a class="nav-link" href="SWC-06-01.html">契約履歴</a></li>
+            
+            <li class="nav-item"><a class="nav-link" href="SWC-08-01.html">新規定期契約</a></li>
+            
+            <li class="nav-item"><a class="nav-link" href="SWC-11-01.html">空き待ち状況確認</a></li>
+            
+            <li class="nav-item"><a class="nav-link" href="SWC-10-01.html">空き駐輪場検索</a></li>
+            
+            <li class="nav-item"><a class="nav-link" href="#">このページの使い方</a></li>
+
+            <li class="nav-item d-lg-none"><a class="nav-link" href="#">ログアウト</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <!-- ▲　マイページメニュー：マイページの時のみ表示　▲ -->
+  <main role="main" id="" class="">
+    <header class="alert alert-success"><!-- InstanceBeginEditable name="bread" -->
+      <h4 class="container">ユーザー情報確認 > ユーザー情報</h4>
+      <!-- InstanceEndEditable --></header>
+    <!-- ▼　メイン部分　▼ --><!-- InstanceBeginEditable name="content" -->
+    <section id="" class="container mt30 mb50">
+      <form class="row form" action="./SWC-1.html">
+        <div class="col-12 col-md-3 offset-0 offset-md-2">
+          <label for="user_name">お名前</label>
+        </div>
+        <div class="col-12 col-lg-6 mb10">
+          <h3>自転車　太郎</h3>
+        </div>
+        <div class="col-12 col-md-3 offset-0 offset-md-2">
+          <label for="user_phonetic">フリガナ</label>
+        </div>
+        <div class="col-12 col-lg-6 mb10">
+          <h3>ジテンシャ　タロウ</h3>
+        </div>
+        <div class="col-12 col-md-3 offset-0 offset-md-2">
+          <label for="user_gender">性別</label>
+        </div>
+        <div class="col-12 col-lg-6 mb10">
+          <h3>男性</h3>
+        </div>
+        <div class="col-12 col-md-3 offset-0 offset-md-2">
+          <label for="user_regident">居住所</label>
+        </div>
+        <div class="col-12 col-lg-6 mb10">
+          <h3>〒100-0000 東京都銀座区1丁目1</h3>
+        </div>
+        <div class="col-12 col-md-3 offset-0 offset-md-2">
+          <label for="user_birthdate">生年月日</label>
+        </div>
+        <div class="col-12 col-lg-6 mb10">
+          <h3>2018/9/12</h3>
+        </div>
+        <div class="col-12 col-md-3 offset-0 offset-md-2">
+          <label for="user_mobile">携帯電話番号</label>
+        </div>
+        <div class="col-12 col-lg-6 mb10">
+          <h3>080-0000-0000</h3>
+        </div>
+        <div class="col-12 col-md-3 offset-0 offset-md-2">
+          <label for="user_homephone">自宅電話番号</label>
+        </div>
+        <div class="col-12 col-lg-6 mb10">
+          <h3>000-0000-0000</h3>
+        </div>
+        <div class="col-12 col-md-3 offset-0 offset-md-2">
+          <label for="user_primemail">メールアドレス</label>
+        </div>
+        <div class="col-12 col-lg-6 mb10">
+          <h3>name@example.com</h3>
+        </div>
+        <div class="col-12 col-md-3 offset-0 offset-md-2">
+          <label for="user_submail">予備メールアドレス</label>
+        </div>
+        <div class="col-12 col-lg-6 mb10">
+          <h3>name@example.com</h3>
+        </div>
+        <div class="col-12 col-md-3 offset-0 offset-md-2">
+          <label for="user_categoryid">利用者区分</label>
+        </div>
+        <div class="col-12 col-lg-6 mb10">
+          <h3>一般</h3>
+        </div>
+        <div class="col-12 col-md-3 offset-0 offset-md-2">
+          <label for="user_workplace">勤務先名</label>
+        </div>
+        <div class="col-12 col-lg-6 mb10">
+          <h3>マルバツ株式会社</h3>
+        </div>
+        <div class="col-12 col-md-3 offset-0 offset-md-2">
+          <label for="user_relate">住所</label>
+        </div>
+        <div class="col-12 col-lg-6 mb10">
+          <h3>〒100-0000 東京都千代田区1</h3>
+        </div>
+        <div class="col-12 col-md-3 offset-0 offset-md-2">
+          <label for="user_pass">パスワード</label>
+        </div>
+        <div class="col-12 col-lg-6 mb10">
+          <h3>＊＊＊＊＊＊＊＊</h3>
+        </div>
+        <div class="col-12 col-md-5 offset-0 offset-md-1 mt10">
+          <input type="submit" class="btn btn-lg btn-block btn-success" value="ユーザー情報を変更する" />
+        </div>
+        <div class="col-12 col-md-5 mt10">
+          <a class="btn btn-lg btn-block btn-outline-success" href="SWC-2.html" />退会する</a>
+        </div>
+        <div class="col-12 col-md-6 offset-0 offset-md-3 mt50 mb50"> <a href="./index.html" class="btn btn-lg btn-block btn-outline-success">マイページへ戻る</a> </div>
+      </form>
+    </section>
+    <!-- InstanceEndEditable --><!-- /.container --> 
+    <!-- ▲　メイン部分　▲ --> 
+    <!-- ▼　マイページフッターメニュー：マイページの時のみ表示　▼ -->
+    <section id="" class="container">
+      <nav class="row d-flex">
+        <div class="col-6 col-md-2 mb20">
+          <div class="card text-center border-success"> <a href="SWC-1-2.html">
+            <figure><img src="../assets/img/menu-user.png" alt="" class="w-75 mt10" /></figure>
+            <p class="text-success">ユーザー情報の<br>
+              確認</p>
+            </a> </div>
+        </div>
+        <div class="col-6 col-md-2 mb20">
+          <div class="card text-center border-success"> <a href="SWC-3.html">
+            <figure><img src="../assets/img/menu-teiki.png" alt="" class="w-75 mt10" /></figure>
+            <p class="text-success">定期契約情報を<br>
+              確認する</p>
+            </a> </div>
+        </div>
+        <div class="col-6 col-md-2 mb20">
+          <div class="card text-center border-success"> <a href="SWC-4-01.html">
+            <figure><img src="../assets/img/menu-koshin.png" alt="" class="w-75 mt10" /></figure>
+            <p class="text-success">定期契約を<br>
+              更新する</p>
+            </a> </div>
+        </div>
+        <div class="col-6 col-md-2 mb20">
+          <div class="card text-center border-success"> <a href="SWC-06-01.html">
+            <figure><img src="../assets/img/menu-rireki.png" alt="" class="w-75 mt10" /></figure>
+            <p class="text-success">定期契約履歴を<br>
+              見る</p>
+            </a> </div>
+        </div>
+        <div class="col-6 col-md-2 mb20">
+          <div class="card text-center border-success"> <a href="SWC-08-01.html">
+            <figure><img src="../assets/img/menu-shinki.png" alt="" class="w-75 mt10" /></figure>
+            <p class="text-success">新規定期契約<br>
+              申し込み</p>
+            </a> </div>
+        </div>
+        <div class="col-6 col-md-2 mb20">
+          <div class="card text-center border-success"> <a href="SWC-10-01.html">
+            <figure><img src="../assets/img/menu-aki.png" alt="" class="w-75 mt10" /></figure>
+            <p class="text-success">空き駐輪場<br>
+              検索</p>
+            </a> </div>
+        </div>
+        <div class="col-6 col-md-2 mb20">
+          <div class="card text-center border-success"> <a href="SWC-15.html">
+            <figure><img src="../assets/img/menu-tuuchi.png" alt="" class="w-75 mt10" /></figure>
+            <p class="text-success">お知らせ一覧</p>
+            </a> </div>
+        </div>
+        <div class="col-6 col-md-2 mb20">
+          <div class="card text-center border-success"> <a href="SWC-11-01.html">
+            <figure><img src="../assets/img/menu-yoyaku.png" alt="" class="w-75 mt10" /></figure>
+            <p class="text-success">空き待ち状況の確認</p>
+            </a> </div>
+        </div>
+        <div class="col-6 col-md-2 mb20">
+          <div class="card text-center border-success"> <a href="">
+            <figure><img src="../assets/img/menu-logout.png" alt="" class="w-75 mt10" /></figure>
+            <p class="text-success">ログアウト</p>
+            </a> </div>
+        </div>
+        <div class="col-6 col-md-2 mb20">
+          <div class="card text-center border-success"> <a href="">
+            <figure><img src="../assets/img/menu-help.png" alt="" class="w-75 mt10" /></figure>
+            <p class="text-success">このページの使い方</p>
+            </a> </div>
+        </div>
+      </nav>
+    </section>
+    
+    <!-- ▲　マイページフッターメニュー：マイページの時のみ表示　▲ --> 
+    <!-- ▼　新着情報　▼ -->
+<!--    <section id="main-news" class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <h2 class="col-12 text-center">新着情報</h2>
+          <div class="col-12 col-md-10 offset-0 offset-md-1">
+            <table class="table">
+              <tr>
+                <th>2018.9.1</th>
+                <th><span class="small alert alert-success">NEWS</span></th>
+                <td><h3><a href="">ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。</a></h3></td>
+              </tr>
+              <tr>
+                <th>2018.9.1</th>
+                <th><span class="small alert alert-success">NEWS</span></th>
+                <td><h3><a href="">ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。</a></h3></td>
+              </tr>
+              <tr>
+                <th>2018.9.1</th>
+                <th><span class="small alert alert-success">NEWS</span></th>
+                <td><h3><a href="">ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。</a></h3></td>
+              </tr>
+              <tr>
+                <th>2018.9.1</th>
+                <th><span class="small alert alert-success">NEWS</span></th>
+                <td><h3><a href="">ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。</a></h3></td>
+              </tr>
+              <tr>
+                <th>2018.9.1</th>
+                <th><span class="small alert alert-success">NEWS</span></th>
+                <td><h3><a href="">ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。ここにニュースタイトルが入ります。</a></h3></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+-->    <!-- ▲　新着情報　▲ --> 
+  </main>
+  <footer class="jumbotron">
+    <section class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <ul class="footer-nav-menu">
+            <li><a href="../summary.html">運営会社</a></li>
+            <li><a href="../privacy.html">個人情報保護方針</a></li>
+            <li class="pc"><a href="../tokusyo.html">特定商取引法に基づく表示</a></li>
+            <li class="w-100 sp"><a href="../tokusyo.html">特定商取引法に基づく表示</a></li>
+            <li><a href="../riyokiyaku.html">ウェブサイト利用規約</a></li>
+            <li><a href="../sitemap.html">サイトマップ</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-10 offset-0 offset-md-1 text-lg-center">
+          <p class="small text-secondary mt20"> 株式会社ソーリン　<br class="sp">
+            〒121-0073　東京都足立区六町4-12-25　<br class="sp">
+            tel:03-5856-4647　fax:03-5856-4648<br>
+          </p>
+          <p class="small text-secondary"> Copyright© so-rin Co.,Ltd. All Rights Reserved. </p>
+        </div>
+      </div>
+    </section>
+    <figure class="p-mark"><img src="../assets/img/10740034_06_75_JP.gif" alt="Pマーク" /></figure>
+  </footer>
+  
+  <!-- ▼　文字サイズCSS変更ボタン　▼ -->
+  <section id="scale-control-area" class="text-center">
+    <button class="btn btn-success mt10">文字を大きく+</button>
+    <button class="btn btn-success btn-submit mt10 d-none">文字を大きく++</button>
+    <br class="pc">
+    <button class="btn btn-secondary mt10">文字を小さく-</button>
+    <button class="btn btn-secondary btn-cancel mt10 d-none">元のサイズへ</button>
+  </section>
+  <!-- ▲　文字サイズCSS変更ボタン　▲ --> 
+  
+</div>
+<!-- ./#font-scale -->
+<div class="modal fade" id="placeModal01" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">あマルバツ駐輪場A</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="閉じる"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.722943699139!2d139.75162621525894!3d35.68382338019366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c0b185b3b75%3A0x3282e79fbc91959c!2z44CSMTAwLTAwMDEg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65Y2D5Luj55Sw77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1536695351221" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <p class="small"> 〒000-0000 東京都千代田区1-1 <br class="sp">
+          標準収容台数：XXX台 </p>
+        <p class="text-danger"> 空き台数：XXX台 </p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-success" onClick="location.href='./SWC-08-02.html'">定期契約</button>
+        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">閉じる</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="placeModal02" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">かマルバツ駐輪場B</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="閉じる"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.722943699139!2d139.75162621525894!3d35.68382338019366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c0b185b3b75%3A0x3282e79fbc91959c!2z44CSMTAwLTAwMDEg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65Y2D5Luj55Sw77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1536695351221" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <p class="small"> 〒000-0000 東京都千代田区1-1 <br class="sp">
+          標準収容台数：XXX台 </p>
+        <p class="text-danger"><a href="../Templates/SWC-10-03.html">空き待ち</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-outline-success" onClick="location.href='./SWC-10-03.html'">空き待ち申込</button>
+        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">閉じる</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="placeModal03" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">かマルバツ駐輪場B</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="閉じる"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.722943699139!2d139.75162621525894!3d35.68382338019366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c0b185b3b75%3A0x3282e79fbc91959c!2z44CSMTAwLTAwMDEg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65Y2D5Luj55Sw77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1536695351221" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <p class="small"> 〒000-0000 東京都千代田区1-1 <br class="sp">
+          標準収容台数：XXX台 </p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-outline-success" onClick="location.href='./SWC-11-03.html'">キャンセルする</button>
+        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">閉じる</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Bootstrap core JavaScript
+   ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+<script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.min.js"><\/script>')</script> 
+<script src="../assets/js/vendor/popper.min.js"></script> 
+<script src="../bootstrap/js/bootstrap.min.js"></script> 
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+<script src="../assets/js/ie10-viewport-bug-workaround.js"></script> 
+<script src="../assets/js/commons.js"></script> 
+<script src="../assets/js/vendor/slick/slick.js"></script> 
+<script src="../assets/js/vendor/jquery.tablesorter/jquery.tablesorter.min.js" type="text/javascript"></script> 
+<script type="text/javascript">
+   $(document).ready(function() 
+       { 
+           $("#sampleTable").tablesorter();
+       } 
+   ); 
+</script>
+        <script>
+HTMLElement.prototype.trigger=function(eventStr){
+  if (document.createEvent) {
+    var e = document.createEvent("HTMLEvents");
+    e.initEvent(eventStr, true, true );
+    return this.dispatchEvent(e);
+  } else {
+    var e = document.createEventObject();
+    return this.fireEvent("on"+eventStr, e);
+  }
+};
+window.addEventListener('DOMContentLoaded', function(e){
+  Array.prototype.forEach.call(document.querySelectorAll('[data-target]'),function(x){
+    x.addEventListener('change',function(e){
+      Array.prototype.forEach.call(document.querySelectorAll('[name='+e.target.getAttribute("name")+']'),function(y){
+        document.querySelector('#'+y.getAttribute('data-target')).style.display=(y.checked?"block":"none");
+      });
+    });
+    x.trigger("change");
+  });
+});</script>
+</body>
+<!-- InstanceEnd --></html>

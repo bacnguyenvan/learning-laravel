@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="public/asset/css/adminlte.css">
+    <!-- Google Font: Source Sans Pro -->
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="public/asset/css/style.css">
+
+</head>
+<body class="hold-transition login-page bg-dark">
+    <div class="login-box">
+        <div class="login-logo">
+            <a href=""><b>Futaba IoT&nbsp;</b>Thiết bị cảm biến V1.0.1</a>
+        </div>
+        <!-- /.login-logo -->
+        <div class="card">
+            <div class="card-body login-card-body">
+                <p class="login-box-msg">Nhập ID người dùng và mật khẩu của bạn<br class="d-none d-lg-inline">và nhấp vào nút đăng nhập</p>
+
+                <form action="" method="post">
+                    <!-- @csrf -->
+                    <div class="input-group mb-3">
+                        <input type="text" name="user_id" class="form-control form-control-lg" placeholder="Nhập ID" maxlength="16">
+                        <div class="input-group-append">
+                            <span class="fa fa-user input-group-text"></span>
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="password" name="user_pass" class="form-control form-control-lg" maxlength="16"
+                               placeholder="Nhập mật khẩu">
+                        <div class="input-group-append">
+                            <span class="fa fa-lock input-group-text"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mt40">
+                       <!--  @if ($errors->has('user_id') || $errors->has('user_pass'))
+                        <div class="col-12">
+                            <p class="alert alert-danger">@if($errors->has('user_id')){{ $errors->first('user_id') }} @else {{ $errors->first('user_pass') }}@endif</p>
+                        </div>
+                        @endif -->
+                        <!-- /.col -->
+                        <div class="col-12 col-lg-8 offset-0 offset-lg-2">
+                            <button type="submit" class="btn btn-lg btn-primary btn-block btn-flat">Đăng nhập</button>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                </form>
+
+              
+
+                <p class="mb-1 mt50">
+                    <a href="#">Nhấn vào đây nếu bạn quên mật khẩu</a>
+                </p>
+                <p class="mb-0">
+                    <a href="{{route('home')}}" class="text-center">Đăng kí người dùng mới</a>
+                </p>
+            </div>
+            
+
+        </div>
+    </div>
+</body>
+</html>
+
+    
